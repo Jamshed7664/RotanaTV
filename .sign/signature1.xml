@@ -4,8 +4,8 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>EwGRn0JC9vVHM81bnI6EkmW47SLk0dtISHmTCiFrvLRap9aO6JxCUABMtYpGox7JkH8BVtyA2map
-TEAdmXnYdA==</DigestValue>
+<DigestValue>882aIJ6IdcILodonrXoJ6cJumkG/YCEsaMAz/28UwIKZQEhA0BUMtTNDsssIjdt0q9irCde7gMDD
+VFsgDvEs1Q==</DigestValue>
 </Reference>
 <Reference URI="channel%2Fchannel.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -119,8 +119,8 @@ sJ9rWbohHg==</DigestValue>
 </Reference>
 <Reference URI="splash%2Fsplash.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>bBzof6d1UVusgb3FXgZvLAXFnheJqAwVnqgZ5d3iTN5DqSMdplZA/gG6zep5St88blQj0qIt4Eh6
-rMsHRyulbA==</DigestValue>
+<DigestValue>z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXcg/SpIdNs6c5H0NE8XYXysP+DGNKHfuwvY7kxvUdBeoGl
+ODJ6+SfaPg==</DigestValue>
 </Reference>
 <Reference URI="video%2Fvideo.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -222,9 +222,9 @@ GyvKX9Snig==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-cTHRMwTaTqZhkYyZKw25CuUIRKQ/3dCVIMjrSJ9AuadvuqFlfA+s1YD6Sy7RI4o6QBbliBDHTz7Y
-o2raqWIA0JzahLU6vhR6hWLgwYLgG/G+lKg5bGTaDrqfcwwB+agJEW/XvNHukZlxk7aLBxhouCVV
-7kENPpyk56nxeiq4pcM=
+KImuP0Q6CYM7JLYeN6U5ZnFbgVfYlZCOPXuCKQoH1pUOezdfW3kEwEqyVqteN+VYlzv/R1348UMh
+7NtkqIaRyzoCN+V1Y/bzecvoKYWmIeWkM4BrkPeEDBpr5wj8hwiQB16LVlTvLYFziiLXheEA4/Sw
+30tYIP8QviyoKGqbRHI=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
