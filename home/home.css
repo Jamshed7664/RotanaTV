@@ -1,0 +1,12 @@
+body{
+	color :white;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background: linear-gradient(#150924, #130921, #140922A1);
+    font-size: 32px;
+    background-color: none !important;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
