@@ -19,8 +19,8 @@ ODJ6+SfaPg==</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>RhaNtba2Q92yS3M7eB40EWev11JhoKd6oTENknMuCicQAfBzRrDBc/0f2OyReVcdY9YNQurpycRp
-lMrN5ad1uQ==</DigestValue>
+<DigestValue>N0BGdheKH1rIyIViLb+1b8p6IcPvxdMCnWXmJsY/nhumUh1arZ8ANRTNGxmOjfK5AcH2k4sI46tW
+2KoicwKbQg==</DigestValue>
 </Reference>
 <Reference URI="css%2Fall.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -219,8 +219,8 @@ sJ9rWbohHg==</DigestValue>
 </Reference>
 <Reference URI="splash%2Fsplash.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>bBzof6d1UVusgb3FXgZvLAXFnheJqAwVnqgZ5d3iTN5DqSMdplZA/gG6zep5St88blQj0qIt4Eh6
-rMsHRyulbA==</DigestValue>
+<DigestValue>EN9GxEZfg9zH8PMm8XqH2bbV7mAUVFHygmtF20yZePUCYBgsXciHzUobfvV0NtN2Xmt3p/I7pLa4
+UyJvO1uDKw==</DigestValue>
 </Reference>
 <Reference URI="vid.mp4">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -347,9 +347,9 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-Us9atMfggJPuD0BTjTXv8dL+qMgQoByTDFs7sv2x64EKAj0ls7dbKHroRBNjL+uttPsMZ++dOYzs
-CjyjTJe0gBqoCYUh5IDB7IlymNqfg7UdZ3fYK6nfDiN5ZErKSuxctlB7VtY/m/fCvxPRwyds/J2P
-TMaMmzixiNQpb/2P6jk=
+H64t0Z4vE8oFuXZ9HFfx6YJSBtSFF4HgNMmAFojwnSSeSrUruo25AJwNCbVd30Ad1+x0RuSeyZ6I
+sQYLqiSekz9e65alvpUrWfOx3eBAbMMwyXgI3PzDFAruFfNB6Fn9JKMehtqZzw7Vgnr5v6Mc9QT5
+lc9goTjKZrCkq3u5rO8=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

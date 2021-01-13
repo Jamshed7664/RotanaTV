@@ -4,8 +4,8 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>LxH9cQcaB8C47+smJrSlCxf6ma4O8ooeEUwz/D8ii+H4CfIJlpJULUGBCtrJP1/7gWaeBIGngXsi
-Gyd7Dqn5Vg==</DigestValue>
+<DigestValue>Cxx5FBvyu7EVJD2GgBUymbvbpt5SIi+6e1QUGigcsSPMiCNM2lfIvBpl2Z/JgRploq0fhY8cF51u
+v7ZqlfLVrQ==</DigestValue>
 </Reference>
 <Reference URI="channel%2Fchannel.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -24,8 +24,8 @@ ODJ6+SfaPg==</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>RhaNtba2Q92yS3M7eB40EWev11JhoKd6oTENknMuCicQAfBzRrDBc/0f2OyReVcdY9YNQurpycRp
-lMrN5ad1uQ==</DigestValue>
+<DigestValue>N0BGdheKH1rIyIViLb+1b8p6IcPvxdMCnWXmJsY/nhumUh1arZ8ANRTNGxmOjfK5AcH2k4sI46tW
+2KoicwKbQg==</DigestValue>
 </Reference>
 <Reference URI="css%2Fall.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -224,8 +224,8 @@ sJ9rWbohHg==</DigestValue>
 </Reference>
 <Reference URI="splash%2Fsplash.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>bBzof6d1UVusgb3FXgZvLAXFnheJqAwVnqgZ5d3iTN5DqSMdplZA/gG6zep5St88blQj0qIt4Eh6
-rMsHRyulbA==</DigestValue>
+<DigestValue>EN9GxEZfg9zH8PMm8XqH2bbV7mAUVFHygmtF20yZePUCYBgsXciHzUobfvV0NtN2Xmt3p/I7pLa4
+UyJvO1uDKw==</DigestValue>
 </Reference>
 <Reference URI="vid.mp4">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -352,9 +352,9 @@ GyvKX9Snig==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-fnI7FGhP3X7DRLiK9MeFjgwZQ59+1ldupKFVxYy6ZqGlHwdxKlnbKxRFB+cKdR7i68TlpEaTXAUh
-krVtAsLTsB6Y+G6b2/t/WPNjJdktu7prp9vstRKgwIubW6vyx0vkfjLqgf/MA7hR0dfp//SzhVjy
-8RBVBR1mDUgaCuJ3O3w=
+thSLqYbtjwyRx8CDPPeZQa3W/EuaTCGhfrXDztm6MbkqEzz/IznGeVYS7e9E8i89Tfbtjv1HhyFX
+eo4TyupZ6P39+8RbL9BqzWEkqVSPmKvhOy6db6Yk2gXVQ4SHk3Ab/ZAgSF/BGhwVdz2D0sriOt4Z
+u8SR05n4LJcLs1ZUbdc=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
