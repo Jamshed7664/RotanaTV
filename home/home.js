@@ -64,7 +64,7 @@ function initTizenKeys()
 
 
 function moveOk() {
-	location.href="../video/video.html";
+	location.href="../avplay/video.html";
 }
 
 

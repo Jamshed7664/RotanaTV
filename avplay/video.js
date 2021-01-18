@@ -11,14 +11,64 @@ var init = function() {
 	var timeStamp = Math.round(getTimeStamp()/1000);
 	console.log(SHA1(apiKey + "-" +timeStamp));
 	 console.log(timeStamp);
-	 initTizenKeys();
+	
 	 makeCards();
-	 setPlayer();
+	 //setPlayer();
+	 initPlayer();
 	 document.getElementById("closeBtn").classList.add('hideNaveBtn');
 	 
 }
 
 window.onload = init;
+
+function log(msg) {
+}
+
+function initPlayer(){
+	
+	 
+	
+
+	 
+	 var config = {
+	           url: 'https://hiplayer.hibridcdn.net/p/rotana-khaleejiya?p=0&s=1610975450&e=1610975450&cf=1610975450&h=60c6204c026d6c09bd25271e15964d6b',
+	           player: document.getElementById('av-player'),
+	           controls: document.querySelector('.video-controls'),
+	           info: document.getElementById('info'),
+	           logger: log //Function used for logging
+
+	           /*Smooth Streaming examples*/
+	           //			url:
+	           // 'http://playready.directtaps.net/smoothstreaming/SSWSS720H264/SuperSpeedway_720.ism/Manifest',
+	           // url: 'http://playready.directtaps.net/smoothstreaming/TTLSS720VC1/To_The_Limit_720.ism/Manifest'
+	       };
+
+
+	       //Check the screen width so that the AVPlay can be scaled accordingly
+	       tizen.systeminfo.getPropertyValue(
+	           "DISPLAY",
+	           function (display) {
+	               log("The display width is " + display.resolutionWidth);
+	               config.resolutionWidth = display.resolutionWidth;
+
+	               // initialize player - loaded from videoPlayer.js
+	               player = new VideoPlayer(config);
+	               player.open(config.url);
+	               
+	               player.toggleFullscreen();
+	              
+	           },
+	           function(error) {
+	               log("An error occurred " + error.message);
+	           }
+	       );
+		 
+	       
+	       
+	       initTizenKeys();
+	       
+}
+
 
 
 /**
@@ -193,12 +243,30 @@ function initTizenKeys()
 function moveOk(){
 	if(inPlayer == "true"){
 
-		  if (player.paused()) {
+		
+		  try{
+			  if (webapis.avplay.getState() === 'IDLE') {
+				  player.prepare();                
+				  player.play();
+	          } else if(webapis.avplay.getState() === 'PAUSED'){
+	        	  player.play();
+	          }   
+	          else {
+				  player.pause();
+			  }
+				  
+		  }
+		  catch (e) {
+			// TODO: handle exception
+			  console.log("incatch");
 			  player.play();
-		  }
-		  else {
-			  player.pause();
-		  }
+		}
+		
+			  
+			  
+//			  console.log(webapis.avplay.getState() === 'PAUSED');
+			  
+			  
 	}
 	else{
 		closeNav();
@@ -311,35 +379,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("closeBtn").classList.remove('showNaveBtn')
     document.getElementById("closeBtn").classList.add('hideNaveBtn')
-}
-
-function setPlayer() {
-	player = videojs('player_one');
-//	var url = "../vid.mp4"
-	//var url = "https://hiplayer.hibridcdn.net/p/rotana-khaleejiya?p=0&s=1610975450&e=1610975450&cf=1610975450&h=60c6204c026d6c09bd25271e15964d6b"
-
-	player.src({
-		src : "../vid.mp4",
-	      withCredentials: true,
-	     type : "application/x-mpegURL"
-	    	 });
-	
-	
-	
-}
-
-function pause() {
-	alert('pause call')
-	 player.pause();
-	 document.getElementById("pause-btn").classList.add('showNaveBtn')
-	 document.getElementById("play-btn").classList.add("hideNaveBtn")
-	}
-
-function play() {
-	alert('play call')
-	player.play();
-	document.getElementById("pause-btn").classList.add('hideNaveBtn')
-	document.getElementById("play-btn").classList.add("showNaveBtn")
 }
 
 

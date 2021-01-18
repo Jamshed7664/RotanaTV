@@ -219,7 +219,7 @@ function VideoPlayer(config) {
          */
         toggleFullscreen: function () {
             if (isFullscreen === false) {
-                webapis.avplay.setDisplayRect(0, 0, 1200, 1080);
+                webapis.avplay.setDisplayRect(0, 0, 1920, 1080);
                 player.classList.add('fullscreenMode');
                 controls.classList.add('fullscreenMode');
                 isFullscreen = true;
