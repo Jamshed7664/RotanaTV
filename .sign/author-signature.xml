@@ -9,8 +9,8 @@ HkIRP/sYbA==</DigestValue>
 </Reference>
 <Reference URI="avplay%2Fvideo.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>OhkKI+oxyvYrs6kbVYXzE5e15ZkZEYHpX1pOFDOD9nalv55KMjONuOd2BrVK+8OQtcR2hrL0FYom
-g0+UrJljpw==</DigestValue>
+<DigestValue>ijUABM1EAB5sTCMV1GZDL+ffR4Js+oU6crt8/2D19d/NzLBdq0ASjK8vurWgXlObv6IAcody/ISm
+huZs0QpquQ==</DigestValue>
 </Reference>
 <Reference URI="avplay%2Fvideo.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -19,8 +19,8 @@ g0+UrJljpw==</DigestValue>
 </Reference>
 <Reference URI="avplay%2Fvideo.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>ijXDmJbeioQbLwvVHFNUMooG1NB7d78LIZujj4qxyU8Sf1YYvZv1qcdvrv0VjUOV7i+1wUBA6p+f
-pgMd2+HHGg==</DigestValue>
+<DigestValue>THn3kZOPVO25OOUBadE7uWMMtL+5q73OEhzeQ0QG1A2U2Ywfera1ngkwteGt+Zb4MqtItwUxzDIv
+wFp+uPCo0w==</DigestValue>
 </Reference>
 <Reference URI="avplay%2Fvideo.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -54,8 +54,8 @@ ODJ6+SfaPg==</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>eYYCLAhgiTo27SurIQ8hHNl9/Ha++geNe2bi46YmbiRJXrpWQ0C98ByWY+wgtivdsUXjZoTvJ0jO
-a1X+tJzbeQ==</DigestValue>
+<DigestValue>HzLSaShe0cOvji/qeeNT9dWpKI71UEbgqitxg4EX0KeQ9lluJNtAA+0oYQX3UIVMLsBLT6J9foeT
+8W16aA+/Sw==</DigestValue>
 </Reference>
 <Reference URI="css%2Fall.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -79,18 +79,18 @@ ODJ6+SfaPg==</DigestValue>
 </Reference>
 <Reference URI="home%2Fhome.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>UqAq1d2wuI1UcBlPmcQk+g2KvzPrdk9DcB4O6woBXdtuOmKy3wmZZXuESoaZJtcxs2qenrZ6Gqmu
-vdvzgWlUOw==</DigestValue>
+<DigestValue>nhn0Sain1IyU42wd8+NggfMkMfkMDDnUXbiivFJea0s95p6YIuBosy0v+H/vaDxW1sOZSCt53jSG
+YEW47JjH7Q==</DigestValue>
 </Reference>
 <Reference URI="home%2Fhome.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>K1848shpWhSw3mvhBy5CLAjFUlmEfD2MXVkQ6GVZ5Z+rFSw5BSIE1qd5fs8jB+n8oW+VFPLhCyco
-yrr6CiXX5g==</DigestValue>
+<DigestValue>Eo6YnmU3I7F6qAuIY99iRZ6DXoDv4VlUZ4Sf4dypLTtiHq1vp3wTPZdGk7DcHctQi6sRFDRwJp7W
+KuHDdSTN/Q==</DigestValue>
 </Reference>
 <Reference URI="home%2Fhome.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>bEtNjUBf8i9gdhD7Ukw6Hg6f+TvgyYJsDgNHQX0mGPe6QUFnZCGJ2MVFIr076zgIOuaaRzjyWIAs
-Kijf3zqLmg==</DigestValue>
+<DigestValue>4npGkijn7vs9l/z2NN35+2IXDmCLgHJVWXjk6JHInrw3fPCP/nllH8cw5e/SDFE2+7oG2WhDFeA/
+jR+0FVOviw==</DigestValue>
 </Reference>
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -392,9 +392,9 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-YG6kVcF3BIwbnU4DXkduQJjOt/RzER0r4sXukFwQdUtfZp2RTi5lM6aUsBWDWyjk2F5kCF0q7rFJ
-oNBmnnhhdigERhtNBc0yAT2BLRT5psz6iLbbW0qPS0KM2QhXAbfPxra4QDkhF+I60/nEfw+1SjkL
-p2jUmGVm8rCrZpWfIuk=
+b1BVRTO9wvEFfwR3NBEg9UNdTZbj8o+luYILd9aLNvO+UhHMdtjTecDBpFu+MW2oYCNDRlILVuhu
++r/Idt3A3c5VYKPKrsQC2HVl6By4ZdqMcXEXigl2vuPeWm55WjnmC8U2L0vMb5XOxdTcIwMQvi+O
+WgVFjv0l3alEi8430PQ=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

@@ -1,12 +1,16 @@
 var recentChannelList = ['1' ,  '1' , '1' , '1' , '1' , '1'];
-var allChannelList = ['1' ,  '1' , '1' , '1' , '1' , '1' , '1' ,  '1' , '1' , '1' , '1' , '1'];
+var allChannelList = [];
 var selectedRecentPos = 0;
 var selectedAllPos = 0;
 
+var url="https://live.hibridmedia.com/api/streams";
+var token="LzDsM8yHVuBXXeye8j4FRs96SP9SGTHzBncXHKyzv4rb29FdbPAHKaAxMFREWXfj";
+
+
 var init = function () {
     
-	recentChannels();
-	allChannels();
+	//recentChannels();
+	fetchChannels();
 	
 	initTizenKeys();
    
@@ -64,6 +68,9 @@ function initTizenKeys()
 
 
 function moveOk() {
+	
+	localStorage.setItem("video_url", JSON.stringify(allChannelList[selectedAllPos]));
+	localStorage.setItem("video_selected_loc", selectedAllPos);
 	location.href="../avplay/video.html";
 }
 
@@ -72,23 +79,23 @@ function moveUp() {
 	
 	if(document.getElementsByClassName("activeAll")[0] !== undefined){
 		
-		if(selectedAllPos>=0 && selectedAllPos<=5){
-			selectedAllPos=0;
-			scrollToTop();
-		      
-			
-	        removeFocus("activeAll");
-	        removeFocus("setBoxShadow");
-	        selectedRecentPos = 0;
-	        
-	        setFocus("card-all " + selectedRecentPos, 'activeRecent');
-	    	 setFocus('recent_img_' +  selectedRecentPos, 'setBoxShadow');
-
-		}
-		else{
+//		if(selectedAllPos>=0 && selectedAllPos<=5){
+//			selectedAllPos=0;
+//			scrollToTop();
+//		      
+//			
+//	        removeFocus("activeAll");
+//	        removeFocus("setBoxShadow");
+//	        selectedRecentPos = 0;
+//	        
+//	        setFocus("card-all " + selectedRecentPos, 'activeRecent');
+//	    	 setFocus('recent_img_' +  selectedRecentPos, 'setBoxShadow');
+//
+//		}
+//		else{
 			
 			if(selectedAllPos-6 >= 0){
-				 scroll('-=250px');
+				s("card " + selectedAllPos);
 				  
 				 selectedAllPos = selectedAllPos-6;
 				   removeFocus("activeAll");
@@ -99,29 +106,29 @@ function moveUp() {
 				 
 			}
 			
-		}
+//		}
 
 	      
 	}
-	else if(document.getElementsByClassName("activeRecent")[0] !== undefined){
-		
-		if(selectedRecentPos>=0 && selectedRecentPos<=5){}
-		else{
-			if(selectedRecentPos-6 >= 0){
-				 scroll('-=200px');
-				  
-				 selectedRecentPos = selectedRecentPos-6;
-				    removeFocus("activeRecent");
-			        removeFocus("setBoxShadow");
-
-			        setFocus("card-all " + selectedRecentPos, "activeRecent");
-			        setFocus("recent_img_" + selectedRecentPos, "setBoxShadow");
-				 
-			}
-		}
-
-	      
-	}
+//	else if(document.getElementsByClassName("activeRecent")[0] !== undefined){
+//		
+//		if(selectedRecentPos>=0 && selectedRecentPos<=5){}
+//		else{
+//			if(selectedRecentPos-6 >= 0){
+//				 scroll('-=200px');
+//				  
+//				 selectedRecentPos = selectedRecentPos-6;
+//				    removeFocus("activeRecent");
+//			        removeFocus("setBoxShadow");3
+//
+//			        setFocus("card-all " + selectedRecentPos, "activeRecent");
+//			        setFocus("recent_img_" + selectedRecentPos, "setBoxShadow");
+//				 
+//			}
+//		}
+//
+//	      
+//	}
 	
 	
 	
@@ -132,47 +139,48 @@ function moveUp() {
 
 function moveDown() {
 	
-	if(document.getElementsByClassName("activeRecent")[0] !== undefined){
-		
-		if(selectedRecentPos>=recentChannelList.length-6 && selectedRecentPos<=recentChannelList.length-1){
-		
-		    scroll('+=200px');
-		      
-			
-	        removeFocus("activeRecent");
-	        removeFocus("setBoxShadow");
-	        selectedRecentPos = 0;
-	        
-	        setFocus("card " + selectedAllPos, "activeAll");
-	        setFocus("all_img_" + selectedAllPos, "setBoxShadow");
-
-		}
-		else{
-			if(selectedRecentPos+6 <= recentChannelList.length-1){
-				 scroll('+=200px');
-				  
-				 selectedRecentPos = selectedRecentPos+6;
-				    removeFocus("activeRecent");
-			        removeFocus("setBoxShadow");
-
-			        setFocus("card-all " + selectedRecentPos, "activeRecent");
-			        setFocus("recent_img_" + selectedRecentPos, "setBoxShadow");
-				 
-			}
-		}
-	
-	}
-	
-	
-	
-	else if(document.getElementsByClassName("activeAll")[0] !== undefined){
+//	if(document.getElementsByClassName("activeRecent")[0] !== undefined){
+//		
+//		if(selectedRecentPos>=recentChannelList.length-6 && selectedRecentPos<=recentChannelList.length-1){
+//		
+//		    scroll('+=200px');
+//		      
+//			
+//	        removeFocus("activeRecent");
+//	        removeFocus("setBoxShadow");
+//	        selectedRecentPos = 0;
+//	        
+//	        setFocus("card " + selectedAllPos, "activeAll");
+//	        setFocus("all_img_" + selectedAllPos, "setBoxShadow");
+//
+//		}
+//		else{
+//			if(selectedRecentPos+6 <= recentChannelList.length-1){
+//				 scroll('+=200px');
+//				  
+//				 selectedRecentPos = selectedRecentPos+6;
+//				    removeFocus("activeRecent");
+//			        removeFocus("setBoxShadow");
+//
+//			        setFocus("card-all " + selectedRecentPos, "activeRecent");
+//			        setFocus("recent_img_" + selectedRecentPos, "setBoxShadow");
+//				 
+//			}
+//		}
+//	
+//	}
+//	
+//	
+//	
+//	else 
+		if(document.getElementsByClassName("activeAll")[0] !== undefined){
 		
 		if(selectedAllPos>=allChannelList.length-6 && selectedAllPos<=allChannelList.length-1){}
 		else{
 			
 			if(selectedAllPos+6 <= allChannelList.length-1){
 
-			    scroll('+=200px');
+				s("card " + selectedAllPos);
 			    
 			    selectedAllPos = selectedAllPos+6;
 			      
@@ -196,33 +204,33 @@ function moveDown() {
 	
 function moveLeft() {
 	
-	if(document.getElementsByClassName("activeRecent")[0] !== undefined){
-		if (selectedRecentPos !== 0) {
-			
-			 if (selectedRecentPos % 6 == 0) {
-		        	
-		            scroll('-=250px');
-		        	
-		        }
-			selectedRecentPos--;
-	        removeFocus("activeRecent");
-	        removeFocus("setBoxShadow");
-
-	        setFocus("card-all " + selectedRecentPos, "activeRecent");
-	        setFocus("recent_img_" + selectedRecentPos, "setBoxShadow");
-
-	       
-	    } 
-
-	}
-	else if(document.getElementsByClassName("activeAll")[0] !== undefined){
+//	if(document.getElementsByClassName("activeRecent")[0] !== undefined){
+//		if (selectedRecentPos !== 0) {
+//			
+//			 if (selectedRecentPos % 6 == 0) {
+//		        	
+//		            scroll('-=250px');
+//		        	
+//		        }
+//			selectedRecentPos--;
+//	        removeFocus("activeRecent");
+//	        removeFocus("setBoxShadow");
+//
+//	        setFocus("card-all " + selectedRecentPos, "activeRecent");
+//	        setFocus("recent_img_" + selectedRecentPos, "setBoxShadow");
+//
+//	       
+//	    } 
+//
+//	}
+//	else
+		if(document.getElementsByClassName("activeAll")[0] !== undefined){
 		if (selectedAllPos !== 0) {
 			
-			 if (selectedAllPos % 6 == 0) {
+			 	
+					s("card " + selectedAllPos);
 		        	
-		            scroll('-=250px');
-		        	
-		        }
+		        
 			 selectedAllPos--;
 	        removeFocus("activeAll");
 	        removeFocus("setBoxShadow");
@@ -240,24 +248,25 @@ function moveLeft() {
 function moveRight() {
 	
 	
-	if(document.getElementsByClassName("activeRecent")[0] !== undefined){
-		if (selectedRecentPos !== (recentChannelList.length - 1)) {
-			selectedRecentPos++;
-	        removeFocus("activeRecent");
-	        removeFocus("setBoxShadow");
-
-	        setFocus("card-all " + selectedRecentPos, "activeRecent");
-	        setFocus("recent_img_" + selectedRecentPos, "setBoxShadow");
-
-	        if (selectedRecentPos % 6 == 0) {
-	        	
-	            scroll('+=250px');
-	        	
-	        }
-	    }
-
-	}
-    else if(document.getElementsByClassName("activeAll")[0] !== undefined){
+//	if(document.getElementsByClassName("activeRecent")[0] !== undefined){
+//		if (selectedRecentPos !== (recentChannelList.length - 1)) {
+//			selectedRecentPos++;
+//	        removeFocus("activeRecent");
+//	        removeFocus("setBoxShadow");
+//
+//	        setFocus("card-all " + selectedRecentPos, "activeRecent");
+//	        setFocus("recent_img_" + selectedRecentPos, "setBoxShadow");
+//
+//	        if (selectedRecentPos % 6 == 0) {
+//	        	
+//	            scroll('+=250px');
+//	        	
+//	        }
+//	    }
+//
+//	}
+//    else
+    	if(document.getElementsByClassName("activeAll")[0] !== undefined){
 	
     	if (selectedAllPos !== (allChannelList.length - 1)) {
     		selectedAllPos++;
@@ -267,11 +276,10 @@ function moveRight() {
 	        setFocus("card " + selectedAllPos, "activeAll");
 	        setFocus("all_img_" + selectedAllPos, "setBoxShadow");
 
-	        if (selectedAllPos % 6 == 0) {
+	      	
+				s("card " + selectedAllPos);
 	        	
-	            scroll('+=250px');
-	        	
-	        }
+	        
 	    }
    
   }
@@ -340,6 +348,69 @@ function recentChannels(){
 
 
 
+function fetchChannels()
+{
+	
+	//viewLoader();
+		    
+	fetch(url, {
+	   	  method: 'GET',
+		  headers: {
+			  'Authorization' : "Bearer " + token,
+		  },
+		})
+		.then(response => response.json())
+		.then(data => {
+	
+			
+        		
+        		data.forEach((result, idx) => {
+
+	        		  var obj = {
+	        				  "poster": result["logo"],
+	     	                 "channel_name": result["channel_name"],
+	     	                 "tmp_link_hls": result["tmp_link_hls"]
+	     			 };
+
+	        		  allChannelList.push(obj);
+	        		 
+	        		
+	        	    })
+	        	
+	        	   
+	        	    
+	        	    //set list to storage...
+	        	    localStorage.setItem("video_list", JSON.stringify(allChannelList));
+	        	    allChannels();
+        			//showSection("container-fluid_id");
+
+        	
+        	//hideLoader();
+        		
+        		
+        	
+        	
+        	
+        	
+		
+		
+			  
+			  
+			
+		  
+		})
+		.catch((error) => {
+		  console.log("Err : " , error);
+		
+		  
+		});
+		    
+		    
+  
+}
+
+
+
 
 function allChannels(){
 	
@@ -385,13 +456,19 @@ function allChannels(){
        var temp = `
      
        <div id="card ${index}" class="col-2">
-       <img id="all_img_${index}" src="../images/channel (${index+1}).png" class="appImg">
+       <img id="all_img_${index}" src="${result["poster"]}" class="appImg">
        </div>
        
        `;
 
        row.innerHTML += temp;
+
+	 
+	 
 	 })
+	 
+	 setFocus("card " + selectedAllPos, 'activeAll');
+	 setFocus('all_img_' +  selectedAllPos, 'setBoxShadow');
 
 	
 }
@@ -422,3 +499,12 @@ function scroll(by) {
 	        scrollTop: by
 	    }, 300);
 }
+
+
+
+function s(id){
+	document.getElementById(id).scrollIntoView({
+		  behavior: 'smooth'
+		});
+}
+

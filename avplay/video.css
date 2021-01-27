@@ -63,6 +63,7 @@
     height: 15rem;
     margin-top: 0rem;
     border: 2px solid black;
+    background-color : black;
 }
 .bottoNav {
     position: absolute !important;

@@ -1,17 +1,26 @@
-var allChannelList = ["1" , "1" , "1" , "1" , "1" , "1" , "1" , "1" , "1"];
+var allChannelList;
 var selectedRecentPos=0;
 var inPlayer = "true";
-
+var movie;
 var apiKey = "ZgdgzkAaktL434Jzgh4W9m7XAwMaLnZEHspCwAeTHkvSzn3uU7E6UVjb9buS7es2";
 
 var player;
 var init = function() {
 	
 	
-	var timeStamp = Math.round(getTimeStamp()/1000);
-	console.log(SHA1(apiKey + "-" +timeStamp));
-	 console.log(timeStamp);
+//	var timeStamp = Math.round(getTimeStamp()/1000);
+//	console.log(SHA1(apiKey + "-" +timeStamp));
+//	 console.log(timeStamp);
+//	
 	
+	
+    movie = JSON.parse(localStorage.getItem("video_url"));
+    allChannelList = JSON.parse(localStorage.getItem("video_list"));
+    var pos = localStorage.getItem("video_selected_loc"); 
+    if(pos!=null){
+    	selectedRecentPos = parseInt(pos);
+
+    }
 	 makeCards();
 	 //setPlayer();
 	 initPlayer();
@@ -31,8 +40,9 @@ function initPlayer(){
 
 	 
 	 var config = {
-	           url: 'https://hiplayer.hibridcdn.net/p/rotana-khaleejiya?p=0&s=1610975450&e=1610975450&cf=1610975450&h=60c6204c026d6c09bd25271e15964d6b',
-	           player: document.getElementById('av-player'),
+	         //  url: 'https://hiplayer.hibridcdn.net/p/rotana-khaleejiya?p=0&s=1610975450&e=1610975450&cf=1610975450&h=60c6204c026d6c09bd25271e15964d6b',
+	         url : movie['tmp_link_hls'] ,    
+			 player: document.getElementById('av-player'),
 	           controls: document.querySelector('.video-controls'),
 	           info: document.getElementById('info'),
 	           logger: log //Function used for logging
@@ -230,7 +240,7 @@ function initTizenKeys()
     		moveOk();
        		break;
     	case 10009: //RETURN button
-		  //  location.href = "../home/home.html";
+		    location.href = "../home/home.html";
     		break;
     	default:
     		console.log('Key code : ' + e.keyCode);
@@ -269,8 +279,19 @@ function moveOk(){
 			  
 	}
 	else{
-		closeNav();
-		inPlayer = "true";
+		//in the side list........
+//		closeNav();
+		localStorage.setItem("video_url", JSON.stringify(allChannelList[selectedRecentPos]));
+		localStorage.setItem("video_selected_loc", selectedRecentPos);
+//		player.pause();
+//		initPlayer();
+//		inPlayer = "true";
+//	
+		
+		
+		location.href="../avplay/video.html";
+
+		
 	}
 }
 
@@ -376,6 +397,7 @@ function openNav() {
 }
 
 function closeNav() {
+	localStorage.getItem("video_list")
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("closeBtn").classList.remove('showNaveBtn')
     document.getElementById("closeBtn").classList.add('hideNaveBtn')
@@ -403,7 +425,7 @@ function makeCards(){
       	else {
       	
               showcase.innerHTML += ` <div id="card-all ${index}" class="col-12 mt-4">
-              <img class="cardImg" id="recent_img_${index}" src="../images/splash.png" alt="Card image cap">
+              <img class="cardImg" id="recent_img_${index}"  src="${result["poster"]}"  alt="Card image cap">
               </div>`;
 
 				
@@ -412,6 +434,9 @@ function makeCards(){
        
 
 	 })
+	 
+	 s("card-all " + selectedRecentPos);
+
 	 
 	 
 	
