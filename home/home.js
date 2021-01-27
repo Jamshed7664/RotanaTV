@@ -345,13 +345,18 @@ function recentChannels(){
 	
 }
 
+function viewLoader(){
+	 document.getElementById("spinner_display_id").classList.add('spinner-view')
+}
 
-
+function hideLoader(){
+	 document.getElementById("spinner_display_id").classList.add('spinner-hide')
+}
 
 function fetchChannels()
 {
 	
-	//viewLoader();
+	viewLoader();
 		    
 	fetch(url, {
 	   	  method: 'GET',
@@ -383,30 +388,14 @@ function fetchChannels()
 	        	    localStorage.setItem("video_list", JSON.stringify(allChannelList));
 	        	    allChannels();
         			//showSection("container-fluid_id");
-
         	
-        	//hideLoader();
-        		
-        		
-        	
-        	
-        	
-        	
-		
-		
-			  
-			  
-			
+        	hideLoader();
 		  
 		})
 		.catch((error) => {
-		  console.log("Err : " , error);
-		
-		  
-		});
-		    
-		    
-  
+		  console.log("Err : " , error);		  
+		});		    
+		 
 }
 
 

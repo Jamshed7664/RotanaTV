@@ -59,11 +59,12 @@
     }
 }
 .cardImg {
-    width: 17rem;
+       width: 17rem;
     height: 15rem;
     margin-top: 0rem;
     border: 2px solid black;
-    background-color : black;
+    background-color: black;
+    object-fit: cover;
 }
 .bottoNav {
     position: absolute !important;
@@ -74,8 +75,8 @@
     opacity: 0.57 !important;
 }
 .liveImg {
-    width: 70px;
-    height: 38px;
+    width: 97px;
+    height: 41px;
 }
 .controls {
     position: absolute !important;
@@ -88,8 +89,25 @@
 .vjs-control-bar {
     display: none !important;
 }
+.setBoxShadow {
+    box-shadow: -1px 0px 14px 9px rgba(64, 166, 76, 1);
+    transform: scale(1.02);
+}
+.closeimg {
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    width: 56px;
+}
+.Openimg{
+	position: absolute;
+    left: 4rem;
+    top: 4rem;
+    width: 80px;
+}
 
-.setBoxShadow{
-	box-shadow: -1px 0px 14px 9px rgba(64,166,76,1);
-	    transform: scale(1.02);
+.pause-btn{
+	color: #0E7B42;
+    font-size: 46px;
+    display: none;
 }
