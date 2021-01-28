@@ -257,18 +257,26 @@ function moveOk(){
 		  try{
 			  if (webapis.avplay.getState() === 'IDLE') {
 				  player.prepare();                
+
+				  document.getElementById('btn_pause').style.display='none';
+				  document.getElementById('btn_play').style.display='block';
 				  player.play();
 	          } else if(webapis.avplay.getState() === 'PAUSED'){
+	        	  document.getElementById('btn_pause').style.display='none';
+				  document.getElementById('btn_play').style.display='block';
 	        	  player.play();
 	          }   
 	          else {
+	        	  document.getElementById('btn_pause').style.display='block';
+				  document.getElementById('btn_play').style.display='none';
 				  player.pause();
 			  }
 				  
 		  }
 		  catch (e) {
 			// TODO: handle exception
-			  console.log("incatch");
+			  document.getElementById('btn_pause').style.display='none';
+			  document.getElementById('btn_play').style.display='block';
 			  player.play();
 		}
 		
