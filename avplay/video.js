@@ -33,9 +33,25 @@ window.onload = init;
 function log(msg) {
 }
 
+
+
+
+function showControls(){
+	
+}
+
+function hideControls(){
+	
+}
+
+
+
 function initPlayer(){
 	
 	 
+	
+	
+	
 	
 
 	 

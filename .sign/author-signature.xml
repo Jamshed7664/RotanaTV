@@ -94,8 +94,8 @@ NqLNM19QBA==</DigestValue>
 </Reference>
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>BTGBG483ma/3HgWnreWF2xbdzr4F0gTRWjwxoSV+7kKBWt4UJTuv5WE4DhKdU4in2kwn/55O/qPD
-bNc/wgCuGg==</DigestValue>
+<DigestValue>1gfdruAibT8z1FQWWJ4zu6pifT75ekXs7FBhET80Gz+DwAYlazJ2OzhmT8dKbMEbLpqWhw2b7hQv
+X0AB7iqfng==</DigestValue>
 </Reference>
 <Reference URI="images%2Fchannel%20(1).png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -282,11 +282,6 @@ sJ9rWbohHg==</DigestValue>
 <DigestValue>LOS4qsFM1Zd2322Rbcza5zXtGZM8i/fhLAN5a5e9iEy46px3aoenwu1ehoQuygG2vqw/JiNuRI+m
 9UTYpG9xOA==</DigestValue>
 </Reference>
-<Reference URI="vid.mp4">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>SWLrPTBFNk+ErOZwqpyASKYZtGqPljHswU8n0zLNEo5GmSz7WFrKZ3uRqQ84NST9bq3nwhmKtK2o
-MSZEcEPwAg==</DigestValue>
-</Reference>
 <Reference URI="video%2F.gitignore">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
 <DigestValue>e7cS4AaHK141PX52cG3MROU6vCLOe9O1SEDM12rA7XAgjYzSaKgj/whZ9ei87xZmEhMl4GTlTdrL
@@ -417,9 +412,9 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-Hsv9SF+e01mz4c+6Cmr29ePkwTN6ENjUxvujEthOPqrMa55W75rlOh1JNo0sIgwYXhUPjK1QR2do
-75AptepoWNloIEmvTmTcBdYQPNGDfBYxIQVqUJ2bYlvx4kRojnuWVa8BEk6614C3xS10Hu59zyp2
-/F7rKotHyUdC3x+Snxs=
+Xg16tt/e6SK1lwoPf6X4m624cDZwh8CvvL6NJd5S5w4VZESp0m3TRK87nM8NC7VaRdawV8V/ZmJI
+in7gT5hm/w/SqqXhFVq/hmKnrbUacSce1lrmssLhyZWjXFBAqGODhTg+9i5PIeT4iSa88Xlp+pEz
+qmy899GFy8J7tlHDwIw=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

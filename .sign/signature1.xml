@@ -4,8 +4,8 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>/r0bBR3w8cp0DCHHaT0hbE7I89x44uLSNGuaN2TTTU9dCu5dBQb/7M9ZXnOgGHanNgViQLNBdU2E
-c2aJD5T04g==</DigestValue>
+<DigestValue>dBBjM2xaR0XEZvQYgXetdZWOnFJu6Zg685XKerZwDlnDIb00BW/8fDT5+2IwgqdqA7tKuZeN5MZ3
+X0BtKzQzEg==</DigestValue>
 </Reference>
 <Reference URI="avplay%2Fnuevo.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -99,8 +99,8 @@ NqLNM19QBA==</DigestValue>
 </Reference>
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>BTGBG483ma/3HgWnreWF2xbdzr4F0gTRWjwxoSV+7kKBWt4UJTuv5WE4DhKdU4in2kwn/55O/qPD
-bNc/wgCuGg==</DigestValue>
+<DigestValue>1gfdruAibT8z1FQWWJ4zu6pifT75ekXs7FBhET80Gz+DwAYlazJ2OzhmT8dKbMEbLpqWhw2b7hQv
+X0AB7iqfng==</DigestValue>
 </Reference>
 <Reference URI="images%2Fchannel%20(1).png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -287,11 +287,6 @@ sJ9rWbohHg==</DigestValue>
 <DigestValue>LOS4qsFM1Zd2322Rbcza5zXtGZM8i/fhLAN5a5e9iEy46px3aoenwu1ehoQuygG2vqw/JiNuRI+m
 9UTYpG9xOA==</DigestValue>
 </Reference>
-<Reference URI="vid.mp4">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>SWLrPTBFNk+ErOZwqpyASKYZtGqPljHswU8n0zLNEo5GmSz7WFrKZ3uRqQ84NST9bq3nwhmKtK2o
-MSZEcEPwAg==</DigestValue>
-</Reference>
 <Reference URI="video%2F.gitignore">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
 <DigestValue>e7cS4AaHK141PX52cG3MROU6vCLOe9O1SEDM12rA7XAgjYzSaKgj/whZ9ei87xZmEhMl4GTlTdrL
@@ -422,9 +417,9 @@ GyvKX9Snig==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-p5c6sVK0TahniiFbapuWndZYAhc6Kzl6SmS3X9qqGctDCkcev024b9YsCuMFrbvSYv9yJkqBezUQ
-/N+TJqjampd2wCSAjbHPr6+0qg52WPR8OzArpzxruEMGo6rfkcRqyT+nSmeoQZVj23Qsp6emidQ1
-Lxcui65TU3KRTQEXGCQ=
+Bg2lgVspA4i6z8eNb1hjO5xDz1Ip/iwSaOyluD8hTs5Nior7bwBdcG/vpaZFvcEdXHOtf7/zx6fH
+arbak16iXvqJWN61lrEw6qMTmaegEopnM4SXpU0yciHs4zO9gM9GcN/prKAPkvnP/cTSEFUnpjgA
++copluhYqBNWuqKDEqI=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
