@@ -14,13 +14,13 @@ HkIRP/sYbA==</DigestValue>
 </Reference>
 <Reference URI="avplay%2Fvideo.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>QK1duxU/Vn/y4SKd5nQn/PlJI55VaqibaioAhoubouwl/pWOL+/H1yWVp33sJE5GVgIZt9VuF5V3
-yrmZWAYd1A==</DigestValue>
+<DigestValue>/R6enmEzO093iTiswa9MwuOuW1e6gnOjM5oO4YUMXvYOGOyuRsHMprPDr2sJdC/Xktm8FLTBIn3s
+wUc8RsqP0g==</DigestValue>
 </Reference>
 <Reference URI="avplay%2Fvideo.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>JPtnQT0Izw2bZ6szCYfZL4KnxV+QJ7QHYC7rNMVEFNfgKe0P6Y5P6mM8QWEJWtcohEcVgMpGVviz
-WGrFwObUcw==</DigestValue>
+<DigestValue>vsBVBlfcMiSw40qjgFuqtHKNsABYuCBz8oezviJoTan3ToDz9jLvER5hiXxzXYhAR6rk9ii+oTEQ
+gt+kqltB6A==</DigestValue>
 </Reference>
 <Reference URI="avplay%2Fvideo.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -412,9 +412,9 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-Xg16tt/e6SK1lwoPf6X4m624cDZwh8CvvL6NJd5S5w4VZESp0m3TRK87nM8NC7VaRdawV8V/ZmJI
-in7gT5hm/w/SqqXhFVq/hmKnrbUacSce1lrmssLhyZWjXFBAqGODhTg+9i5PIeT4iSa88Xlp+pEz
-qmy899GFy8J7tlHDwIw=
+MbGDqn0MwePmrLX1nfvigN605+eRn/lc2SgtM0O0bMQFup+Ck2Ot4IlafharrrUVwJQ7LXTWIY9C
+Y58fyEprKo5YiDx/Zp7HPN6+zfWQfE7caF9AvXNr85VKOTv4+TFrP8NeYdn6qHJGnkALA4gSvD4N
+HIOBn7KWdsnoBPyOAGs=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

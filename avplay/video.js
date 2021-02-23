@@ -4,6 +4,7 @@ var inPlayer = "true";
 var movie;
 var apiKey = "ZgdgzkAaktL434Jzgh4W9m7XAwMaLnZEHspCwAeTHkvSzn3uU7E6UVjb9buS7es2";
 
+var interval;
 var player;
 var init = function() {
 	
@@ -25,6 +26,7 @@ var init = function() {
 	 //setPlayer();
 	 initPlayer();
 	 document.getElementById("closeBtn").classList.add('hideNaveBtn');
+	 hideControls();
 	 
 }
 
@@ -37,10 +39,41 @@ function log(msg) {
 
 
 function showControls(){
-	
+	document.getElementById('controls_playr').style.display="block"; 
+ 	document.getElementById('openBtn').style.display="block";
+ 	document.getElementById('closeBtn').style.display="block";
 }
 
 function hideControls(){
+	
+	setInterval(function(){
+	     
+		
+		
+		try{
+			
+			
+			 setTimeout(
+					    function() {
+					    	try{
+								 if(webapis.avplay.getState() === 'PLAYING' && inPlayer == "true"){
+									 console.log("ok")
+										document.getElementById('controls_playr').style.display="none"; 
+									 	document.getElementById('openBtn').style.display="none";
+									 	document.getElementById('closeBtn').style.display="none";
+									 }
+							}
+							catch(e){}
+					    }, 7000);
+			
+			
+			
+		}
+		catch(e){}
+
+		
+		
+	}, 7000);
 	
 }
 
@@ -239,6 +272,7 @@ function initTizenKeys()
 {
 	 // add eventListener for keydown
     document.addEventListener('keydown', function(e) {
+    	 showControls(); 
     	switch(e.keyCode){
     	case 37: //LEFT arrow
     		moveLeft();
